@@ -114,7 +114,7 @@ with st.expander("So funktioniert ein Test im Baum", expanded=True):
     st.markdown(
         """
 1. **Ohne Test** hat G den Erwartungswert EV(G) = P · 200 − (1 − P) · 100 und K den Wert 30; die bessere Wahl gibt **EV0**. Ein Hellseher, der den Zustand vorher kennt, wählt in jedem Zustand die bessere Alternative:
-   der Mehrwert gegenüber EV0 ist das **EVPI** (Wert der vollkommenen Information) und die Obergrenze für alles, was ein Test bringen kann.
+   der Mehrwert gegenüber EV0 ist das **EVPI** (Wert der vollkommenen Information, englisch Expected Value of Perfect Information) und die Obergrenze für alles, was ein Test bringen kann.
 2. **Der Test** liefert ein Ergebnis + oder −. Die **Sensitivität** se ist P(+ | hoch), die **Spezifität** sp ist P(− | niedrig); sind beide gleich, heißt der Wert **Trefferquote q**. Im Baum steht vorn ein
    **Ereignisknoten „Testergebnis“**, danach der **Entscheidungsknoten „Wahl“**.
 3. **Bayes umgedreht:** aus Vorab und Testeigenschaften folgen P(+), P(−) und die Posterior-Werte P(hoch | +) und P(hoch | −).
@@ -382,7 +382,7 @@ gerechnet ist, steht im Abschnitt 🚧.
 |---|---|
 | $s \in \{\text{hoch}, \text{niedrig}\}$ | Zustand (Nachfrage) |
 | $a \in \{G, K\}$ | Alternative: G groß bauen, K klein bauen oder mieten |
-| $p = P(\text{hoch})$ | Vorab-Wahrscheinlichkeit, $p_{\text{hoch}} = p$, $p_{\text{niedrig}} = 1-p$ |
+| $p = P(\text{hoch})$ | Vorab-Wahrscheinlichkeit (Prior), $p_{\text{hoch}} = p$, $p_{\text{niedrig}} = 1-p$ |
 | $u(a,s)$ | Auszahlung in GE: $u(G,\text{hoch}) = 200$, $u(G,\text{niedrig}) = -100$, $u(K,\cdot) = 30$ |
 | $y \in \{+,-\}$ | Testergebnis |
 | $se$, $sp$ | Sensitivität $P(+\mid\text{hoch})$, Spezifität $P(-\mid\text{niedrig})$; $q$ = Trefferquote, wenn $se = sp = q$ |
